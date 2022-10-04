@@ -1,0 +1,7 @@
+What's To Come
+
+What will be added in the future.
+-a way to restart to the beginning
+-square root option
+-a way to only do 1 number
+-a way to do more than 2 numbers
