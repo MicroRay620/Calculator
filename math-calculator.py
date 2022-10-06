@@ -1,345 +1,101 @@
 from math import sqrt
 #Ruby Rose (started on October 2022)
+#Add a link that will read the text out load
 print("I am your Mathmatical Assistance Helper or MAH!")
-print("Please tell me your name!")
-name = input("Tell yoru MAH what your name is:")
-print("Hello,", name)
-print("I go one step at a time. Please keeo in mind, I am currently unable to do letter variables.")
+print("I am here to help with your mathmatical needs!")
+print("I go one step at a time. Please keep in mind, I am currently unable to do letter variables.")
 numvars = input("how many numbers do you want? Please only pick a number 1-2. Only type out the numberical character")
 #change 1 - 2 to 1 - 4
 if numvars == "1":
-    x = int(input("What number would you like? Type ONLY the numberical character and not the word"))
+    a = int(input("What number would you like? Type ONLY the numberical character and not the word"))
     exponents = input("Want to use exponents? MUST BE written as 'yes' or 'no'")
-    if exponents == "yes":
+    if exponents == "yes" or "Yes" or "YES" or "Y":
         root = input("Would you like to do a square root? yes or no")
-        if root == "yes":
+        if root == "yes" or "Yes" or "YES" or "Y":
             e = int(input("What exponent do you want?"))
-            x = sqrt(x ** e)
-            print("Your answer is", x)
-        if root == "no":
+            b = a ** e
+            c = sqrt(b)
+        print(a, "was put to the power of", e, "giving the result", b)
+        print(b, "was then square rooted giving", c)
+        if root == "no" or "No" or "NO":
             e = int(input("What exponent do you want?"))
-            x = x ** e
-            print("Your answer is", x)
-        if root == "No":
-            e = int(input("What exponent do you want?"))
-            x = x ** e
-            print("Your answer is", x)
-        #------Ends the root == "No"-----
-        if root == "NO":
-            e = int(input("What exponent do you want?"))
-            x = x ** e
-            print("Your answer is", x)
-    #------Ends the exponents == "yes"-------------
-    if exponents == "Yes":
+            b = a ** e
+        print(a, "was put to the power of", e)
+        print("Giving the final answer of", b)
         root = input("Would you like to do a square root? yes or no")
-        if root == "no":
-            e = int(input("What exponent do you want?"))
-            x = x ** e
-            print("Your answer is", x)
-        if root == "No":
-            e = int(input("What exponent do you want?"))
-            x = x ** e
-            print("Your answer is", x)
-        if root == "NO":
-            e = int(input("What exponent do you want?"))
-            x = x ** e
-            print("Your answer is", x)
-    if exponents == "YES":
+    if exponents == "no" or "No" or "NO" or "N":
         root = input("Would you like to do a square root? yes or no")
-        if root == "yes":
-            e = int(input("What exponent do you want?"))
-            x = sqrt(x ** e)
-            print("You answer is", x)
-        if root == "Yes":
-            e = int(input("What exponent do you want?"))
-            x = sqrt(x ** e)
-        if root == "YES":
-            e = int(input("What exponent do you want?"))
-            x = sqrt(x ** e)
-            print("Your answer is", x)
-        if root == "no":
-            e = int(input("What exponent do you want?"))
-            x = x ** e
-            print("Your answer is", x)
-        if root == "No":
-            e = int(input("What exponent do you want?"))
-            x = x ** e
-            print("Your answer is", x)
-        if root == "NO":
-            e = int(input("What exponent do you want?"))
-            x = x ** e
-            print("Your answer is", x)
-    if exponents == "no":
-        root = input("Would you like to do a square root? yes or no")
-        if root == "yes":
-            x = sqrt(x)
-            print(x)
-            print("Your answer is", x)
-        if root == "Yes":
-            x = sqrt(x)
-            print("Your answer is", x)
-        if root == "YES":
-            x = sqrt(x)
-            print("Your answer is", x)
-        #if both exponents AND roots are no, go back to line 6
+        if root == "yes" or "Yes" or "YES" or "N":
+            b = sqrt(a)
+        print(a, "was square rooted giving the answer of", b)
+        #if exponent and root is No; lead to line 6
 if numvars == "2":
-    x = int(input("Your first number:"))
+    a = int(input("Your first number:"))
     function = input("What kind of equasion do you want?")
-    y = int(input("Your second number:"))
+    b = int(input("Your second number:"))
     exponents = input("Want to use exponents? MUST BE written as 'yes' or 'no'")
-    if exponents == "no":
-        # Change var z to x
+    if exponents == "no" or "No" or "NO" or "N":
         root = input("Would you like to do a square root? 'yes' or 'no'")
-        if root == "yes":
-            if function == "multiplication":
-                x = sqrt(x * y)
-                print("Your multiplication is", x)
-            if function == "Multiplication":
-                x = sqrt(x * y)
-                print("Your multiplication is", x)
-            if function == "MULTIPLICATION":
-                x = sqrt(x * y)
-                print("Your multiplication is", x)
-            if function == "*":
-                x = sqrt(x * y)
-                print("Your multiplication is", x)
-            #-------Ends Multiplication of Root: Yes-------
-            if function == "division":
-                x = sqrt(x / y)
-                print("You Division answer is", x) #Edit done
-            if function == "Division":
-                x = x / y
-                print("You Division answer is", x)
-            if function == "DIVISION":
-                x = sqrt(x / y)
-                print("You Division answer is", x)
-            if function == "/":
-                x = sqrt(x / y)
-                print("You Division answer is", x)
-        if root == "no":
-            if function == "multiplication":
-                x = x * y
-                print("Your multiplication is", x) #Edit done
-            if function == "Multiplication":
-                x = x * y
-                print("Your multiplication is", x) #Edit done
-            if function == "MULTIPLICATION":
-                x = x * y
-                print("Your multiplication is", x) #Edit done
-            if function == "*":
-                x = x * y
-                print("Your multiplication is", x) #Edit done
-            #-------Ends Multiplication of Root: No-------
-            if function == "division":
-                x = x / y
-                print("You Division answer is", x) #Edit done
-            if function == "Division":
-                x = x / y
-                print("You Division answer is", x)
-            if function == "DIVISION":
-                x = x / y
-                print("You Division answer is", x)
-            if function == "/":
-                x = x / y
-                print("You Division answer is", x)
-            #-------Ends Division of Root: No---------
-            if function == "addition":
-                x = x + y
-                print("Your addition answer is", x)
-            if function == "Addition":
-                x = x + y
-                print("Your addition answer is", x)
-            if function == "ADDITION":
-                x = x + y
-                print("Your addition answer is", x)
-            if function == "+":
-                x = x + y
-                print("Your addition answer is", x)
-            #--------Ends Addition of Root: No------
-            if function == "subtraction":
-                x = x - y
-                print("Your subtraction answer is", x)
-            if function == "Subtraction":
-                x = x - y
-                print("Your subtraction answer is", x)
-            if function == "SUBTRACTION":
-                x = x - y
-                print("Your subtraction answer is", x)
-            if function == "-":
-                x = x - y
-                print("Your subtraction answer is", x)
-        #-------end of root == "no"---------
-        if root == "No":
-            if function == "multiplication":
-                x = x * y
-                print("Your multiplication is", x) #Edit done
-            if function == "Multiplication":
-                x = x * y
-                print("Your multiplication is", x) #Edit done
-            if function == "MULTIPLICATION":
-                x = x * y
-                print("Your multiplication is", x) #Edit done
-            if function == "*":
-                x = x * y
-                print("Your multiplication is", x) #Edit done
-            #-------Ends Multiplication of Root: No-------
-            if function == "division":
-                x = x / y
-                print("You Division answer is", x) #Edit done
-            if function == "Division":
-                x = x / y
-                print("You Division answer is", x)
-            if function == "DIVISION":
-                x = x / y
-                print("You Division answer is", x)
-            if function == "/":
-                x = x / y
-                print("You Division answer is", x)
-            #-------Ends Division of Root: No---------
-            if function == "addition":
-                x = x + y
-                print("Your addition answer is", x)
-            if function == "Addition":
-                x = x + y
-                print("Your addition answer is", x)
-            if function == "ADDITION":
-                x = x + y
-                print("Your addition answer is", x)
-            if function == "+":
-                x = x + y
-                print("Your addition answer is", x)
-            #--------Ends Addition of Root: No------
-            if function == "subtraction":
-                x = x - y
-                print("Your subtraction answer is", x)
-            if function == "Subtraction":
-                x = x - y
-                print("Your subtraction answer is", x)
-            if function == "SUBTRACTION":
-                x = x - y
-                print("Your subtraction answer is", x)
-            if function == "-":
-                x = x - y
-                print("Your subtraction answer is", x)
-        #-------end root == "No"---------
-        if root == "NO":
-            if function == "multiplication":
-                x = x * y
-                print("Your multiplication is", x) #Edit done
-            if function == "Multiplication":
-                x = x * y
-                print("Your multiplication is", x) #Edit done
-            if function == "MULTIPLICATION":
-                x = x * y
-                print("Your multiplication is", x) #Edit done
-            if function == "*":
-                x = x * y
-                print("Your multiplication is", x) #Edit done
-            #-------Ends Multiplication of Root: No-------
-            if function == "division":
-                x = x / y
-                print("You Division answer is", x) #Edit done
-            if function == "Division":
-                x = x / y
-                print("You Division answer is", x)
-            if function == "DIVISION":
-                x = x / y
-                print("You Division answer is", x)
-            if function == "/":
-                x = x / y
-                print("You Division answer is", x)
-            #-------Ends Division of Root: No---------
-            if function == "addition":
-                x = x + y
-                print("Your addition answer is", x)
-            if function == "Addition":
-                x = x + y
-                print("Your addition answer is", x)
-            if function == "ADDITION":
-                x = x + y
-                print("Your addition answer is", x)
-            if function == "+":
-                x = x + y
-                print("Your addition answer is", x)
-            #--------Ends Addition of Root: No------
-            if function == "subtraction":
-                x = x - y
-                print("Your subtraction answer is", x)
-            if function == "Subtraction":
-                x = x - y
-                print("Your subtraction answer is", x)
-            if function == "SUBTRACTION":
-                x = x - y
-                print("Your subtraction answer is", x)
-            if function == "-":
-                x = x - y
-                print("Your subtraction answer is", x)
-        #---------ends root == "NO"----------
-    #-------------end 
-    if exponents == "yes":
-        e = int(input("What exponent do you want?"))
-        #change z to x
-        if function == "multiplication":
-            z = x * y
-            z = z ** e
-            print("Your multiplication is", z)
-        if function == "Multiplication":
-            z = x * y
-            z = z ** e
-            print("Your multiplication is", z)
-        if function == "MULTIPLICATION":
-            z = x * y
-            z = z ** e
-            print("Your multiplication is", z)
-        if function == "*":
-            z = x * y
-            z = z ** e
-            print("Your multiplication is", z)
-        if function == "division":
-            z = x / y
-            z = z ** e
-            print("You Division answer is", z)
-        if function == "Division":
-            z = x / y
-            z = z ** e
-            print("You Division answer is", z)
-        if function == "DIVISION":
-            z = x / y
-            z = z ** e
-            print("You Division answer is", z)
-        if function == "/":
-            z = x / y
-            z = z ** e
-        print("You Division answer is", z)
-        if function == "addition":
-            z = x + y
-            z = z ** e
-            print("Your addition answer is", z)
-        if function == "Addition":
-            z = x + y
-            z = z ** e
-            print("Your addition answer is", z)
-        if function == "ADDITIONAL":
-            z = x + y
-            z = z ** e
-            print("Your addition answer is", z)
-        if function == "+":
-            z = x + y
-            z = z ** e
-            print("Your addition answer is", z)
-        if function == "subtraction":
-            z = x - y
-            z = z ** e
-            print("Your subtraction answer is", z)
-        if function == "Subtraction":
-            z = x - y
-            z = z ** e
-            print("Your subtraction answer is", z)
-        if function == "SUBTRACTION":
-            z = x - y
-            z = z ** e
-            print("Your subtraction answer is", z)
-        if function == "-":
-            z = x - y
-            z = z ** e
-            print("Your subtraction answer is", z)
+        if root == "yes" or "Yes" or "YES" or "Y":
+            if function == "multiplication" or "Multiplication" or "MULTIPLICATION":
+                c = a * b
+                d = sqrt(c)
+            if function == "division" or "Division" or "DIVISION" or "/":
+                c = a / b
+                d = sqrt(d)
+            if function == "addition" or "Addition" or "ADDITION" or "+":
+                c = a + b
+                d = sqrt(c)
+            if function == "subtraction" or "Subtraction" or "SUBTRACTION" or "-":
+                c = a - b
+                d = sqrt(c)
+            print(a, "was", function, "with", b, "ending up with", c)
+            print("Then", c, "was square rooted ending with", d)
+        if root == "no" or "No" or "NO" or "N":
+            if function == "multiplication" or "Multiplication" or "MULTIPLICATION" or "*":
+                c = a * b
+            if function == "division" or "Division" or "DIVISION" or "/":
+                c = a / b
+            if function == "addition" or "Addition" or "ADDITION" or "+":
+                c = a + b
+            if function == "subtraction" or "Subtraction" or "SUBTRACTION" or "-":
+                c = a - b
+            print(a, "was", function, "with", b, "ending with", c)
+    if exponents == "yes" or "Yes" or "YES" or "Y":
+        e = int(input("What exponent do you want? Put a number"))
+        root = input("Would you like to do a square root? 'yes' or 'no'")
+        if root == "yes" or "Yes" or "YES" or "Y":
+            if function == "multiplication" or "Multiplication" or "MULTIPLICATION" or "*":
+                c = a * b
+                d = c ** e
+                f = sqrt(d)
+            if function == "division" or "Division" or "DIVISION" or "/":
+                c = a / b
+                d = c ** e
+                f = sqrt(d)
+            if function == "addition" or "Addition" or "ADDITION" or "+":
+                c = a + b
+                d = c ** e
+                f = sqrt(d)
+            if function == "subtraction" or "Subtraction" or "SUBTRACTION" or "-":
+                c = a - b
+                d = c ** e
+                f = sqrt(d)
+            print(a, "was", function, "with", b, "ending up with", c)
+            print(c, "was put to the power of", e, "getting", d)
+            print(d, "was square rooted, getting", f)
+        if root == "no" or "No" or "NO" or "N":
+            if function == "multiplication" or "Multiplication" or "MULTIPLICATION" or "*":
+                c = a * b
+                d = c ** e
+            if function == "division" or "Division" or "DIVISION" or "/":
+                c = a / b
+                d = c ** e
+            if function == "addition" or "Addition" or "ADDITION" or "+":
+                c = a + b
+                d = c ** e
+            if function == "subtraction" or "Subtraction" or "SUBTRACTION" or "-":
+                c = a - b
+                d = c ** e
+            print(a, "was", function, "with", b, "ending up with", c)
+            print(c, "was then put to the power of", e, "giving answer", d)
