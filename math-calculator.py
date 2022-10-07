@@ -148,15 +148,15 @@ if numvars == "3" or "Three":
     if exponents == "no" or "No" or "NO" or "n" or "N":
         if root == "yes" or "Yes" or "YES" or "Y" or "y":
             if function == "multiplication" or "Multiplication" or "MULTIPLICATION":
-                d = a * b * c
-                f = sqrt(d)
+                f = a * b * c
+                g = sqrt(g)
             if function == "division" or "Division" or "DIVISION" or "/":
                 d = a / b 
                 f = d / c
                 g = sqrt(f)
             if function == "addition" or "Addition" or "ADDITION" or "+":
-                d = a + b + c
-                f = sqrt(d)
+                f = a + b + c
+                g = sqrt(d)
             if function == "subtraction" or "Subtraction" or "SUBTRACTION" or "-":
                 d = a - b
                 f = d - c
@@ -164,3 +164,14 @@ if numvars == "3" or "Three":
         print (a, b, "and", c, "were", function, "getting the answer", f)
         print(f, "was square rooted getting answer", g)
         if root == "no" or "No" or "NO" or "n" or "N":
+            if function == "multiplication" or "Multiplication" or "MULTIPLICATION":
+                f = a * b * c
+            if function == "division" or "Division" or "DIVISION" or "/":
+                d = a / b 
+                f = d / c
+            if function == "addition" or "Addition" or "ADDITION" or "+":
+                f = a + b + c
+            if function == "subtraction" or "Subtraction" or "SUBTRACTION" or "-":
+                d = a - b
+                f = d - c
+        print(a, b, "and", c, "were", function, "getting answer", f)
