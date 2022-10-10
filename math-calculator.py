@@ -1,19 +1,19 @@
 from math import sqrt
 #Ruby Rose (started on October 2022)
-switch = True
+#switch = True
 print("I am your Mathmatical Assistance Helper or MAH!")
 print("I am here to help with your mathmatical needs!")
 print("I go one step at a time. Please keep in mind, I am currently unable to do letter variables.")
 numvars = input("how many numbers do you want? Please only pick a number 1-3. Only type out the numberical character")
 #change 1 - 2 to 1 - 4
 #ADD WHEN ISSUE RESOLVED <for x in numvars:> NEED TO LEARN PROPER USE FOR THE <for> variable
-if switch == True:
-    if numvars == "1":
+#if switch == True:
+if numvars == "1":
         a = int(input("What number would you like? Type ONLY the numberical character and not the word"))
         exponents = input("Want to use exponents? MUST BE written as 'yes' or 'no'")
-        if exponents == "yes" or "Yes" or "YES" or "Y":
+        if exponents in {"yes" or "Yes" or "YES" or "Y"}:
             root = input("Would you like to do a square root? yes or no")
-            if root == "yes" or "Yes" or "YES" or "Y":
+            if root in {"yes" or "Yes" or "YES" or "Y"}:
                 e = int(input("What exponent do you want?"))
                 b = a ** e
                 c = sqrt(b)
@@ -25,13 +25,13 @@ if switch == True:
             print(a, "was put to the power of", e)
             print("Giving the final answer of", b)
             root = input("Would you like to do a square root? yes or no")
-        if exponents == "no" or "No" or "NO" or "N":
+        if exponents in {"no" or "No" or "NO" or "N"}:
             root = input("Would you like to do a square root? yes or no")
-            if root == "yes" or "Yes" or "YES" or "N":
+            if root in "yes" or "Yes" or "YES" or "N":
                 b = sqrt(a)
             print(a, "was square rooted giving the answer of", b)
             #if exponent and root is No; lead to line 6
-    if numvars == "2":
+if numvars == "2":
         a = int(input("Your first number:"))
         function = input("What kind of equasion do you want?")
         b = int(input("Your second number:"))
@@ -101,7 +101,7 @@ if switch == True:
                 if function == "subtraction" or "Subtraction" or "SUBTRACTION" or "-":
                     c = a - b
                 print(a, "was", function, "with", b, "ending with", c)
-    if numvars == "3" or "Three":
+if numvars == "3":
         a = int(input("Your first number: "))
         b = int(input("Your second number: "))
         c = int(input("Your third number: "))
