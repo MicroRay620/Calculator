@@ -2,7 +2,7 @@ from math import sqrt
 #Ruby Rose (started on October 2022)
 print("Hello! You have gone to MAH's Hyptonuse Calculator!")
 hypot = input("You need square root? ")
-if hypot == "yes" and "Yes" and "YES" and "Y":
+if hypot in {"yes" and "Yes" and "YES" and "Y"}:
     #add in multiple variable options
     a = int(input("What is the number for the first side? "))
     x = a ** 2
