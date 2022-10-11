@@ -39,13 +39,13 @@ if unit in {"feet" or "Feet" or "FEET" or "ft" or "\'"}:
         if inch == 1:
             print(ft, "feet is equal to", inch, "inch")
     if conv in {"yard" or "Yard" or "YARD"}:
-        yd = ft / 3
+        yd = ft // 3
         if yd == 1:
             print(ft, "feet is equal to", yd, "yard")
         if yd >= 2 or yd < 1:
             print(ft, "feet is equal to", yd, "yards")
     if conv in {"miles" or "Miles" or "MILES" or "mi"}:
-        mi = ft / 5280
+        mi = ft // 5280
         if mi == 1:
             print(ft, "is equal to", mi, "miles")
         if mi >= 2 or mi < 1:
