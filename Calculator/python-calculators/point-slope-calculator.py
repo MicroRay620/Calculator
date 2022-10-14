@@ -1,0 +1,12 @@
+print("Welcome to MAH's Slope Calculator!")
+print("This calculator is used to find the variables in slope!")
+print()
+#print("POINT SLOPE INTERCEPT!")
+#print("Equasion: y = mx + b")
+#slopeVarCount = str(input(""))
+print("B EQUASION")
+print("Equasion y-y1 = m(x-x1)")
+varKnown_xn = str(input("Is x1 known? [Y or N] "))
+varKnown_yn = str(input("Is y1 known? [Y or N] "))
+varKnown_m = str(input("Is m known? [Y or N] "))
+if varKnown_xn in {"Yes" or }
